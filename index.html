@@ -21,8 +21,18 @@
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
-    <container>
+    <section class="container">
+      <img
+        class="illustrationmobile"
+        src="assets/images/illustration-woman-online-mobile.svg"
+      />
+      <img
+        class="illustrationshadowmobile"
+        src="assets/images/bg-pattern-mobile.svg"
+      />
+
       <h1 class="faq">FAQ</h1>
+
       <button class="accordion">How many team members can I invite?</button>
       <div class="panel">
         You can invite up to 2 additional users on the Free plan. There is no
@@ -72,23 +82,8 @@
             }
           });
         }
-
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-          });
-        }
       </script>
-    </container>
+    </section>
 
     <div class="attribution">
       Challenge by
