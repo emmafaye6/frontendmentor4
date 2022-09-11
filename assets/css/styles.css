@@ -32,13 +32,81 @@ body {
   display: grid;
   place-items: center;
   background: var(--background-col) no-repeat;
-
-  .faqfaq {
-    background: white;
-    border-radius: 2.3rem;
-  }
 }
 
+section.faq {
+  background: white;
+  border-radius: 2.3rem;
+  display: grid;
+  grid: 10.4rem max-content / 1fr;
+  gap: 2.8rem;
+  width: 90%;
+  max-width: 60rem;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+}
+
+section.imgcontainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid: "image-containers" 1fr/1fr;
+}
+
+.mainimgcontainer {
+  grid-area: image-containers;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid: "images" 1fr/1fr;
+}
+
+.mainimgcontainer > picture {
+  grid-area: images;
+}
+
+picture.illustrationwoman img {
+  width: 23.685rem;
+  height: auto;
+  transform: translate(0, -10.8rem);
+  position: relative;
+  z-index: var(--z-index-secondary);
+}
+
+picture.shadowillustration img {
+  width: 23.685rem;
+  transform: translate(0, -3.7rem);
+  z-index: var(--z-index-lowest);
+}
+
+@media screen and (min-width: 1110px) {
+  section.faq {
+    background: white;
+    grid: 1fr / 38.8rem 1fr;
+    gap: 8rem;
+    max-width: 92rem;
+    min-height: 50.9rem;
+  }
+
+  .mainimgcontainer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  picture.illustrationwoman img {
+    width: 47.2rem;
+    transform: translate(-8.5rem, 0);
+  }
+
+  picture.shadowillustration img {
+    position: absolute;
+    width: 96.4rem;
+    right: 0;
+    top: 0;
+    transform: translate(0, -58%);
+  }
+}
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
