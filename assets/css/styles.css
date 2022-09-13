@@ -163,26 +163,18 @@ li.faqitem:hover .itemsummary {
   body {
     font-size: var(--font-size-desktop);
   }
-
   section.faq {
-    margin-top: 5rem;
     background: white;
-    line-height: 10px;
     grid: 1fr / 38.8rem 1fr;
-    gap: 7rem;
-    min-width: 50rem;
-    width: 65rem;
-    max-width: 80rem;
-    min-height: 75%;
-    max-height: 60rem;
-    padding: 0 0 0 0;
-    overflow: hidden;
+    gap: 8.7rem;
+    max-width: 92rem;
+    min-height: 50.9rem;
   }
 
   .mainimgcontainer {
     position: relative;
     overflow: hidden;
-    margin-top: -5rem;
+    margin-top: 0em;
   }
 
   picture.illustrationwoman img {
