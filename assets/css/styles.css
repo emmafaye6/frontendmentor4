@@ -27,18 +27,15 @@ html {
   --z-index-lowest: 1;
 }
 
-html {
-  background: linear-gradient(#e66465, #9198e5);
-  height: 100%;
-  width: 100%;
-}
-
 body {
   width: 80%;
+  min-width: 100vw;
   min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   display: grid;
   place-items: center;
+  background: linear-gradient(#e66465, #9198e5);
 }
 
 section.faq {
@@ -50,7 +47,7 @@ section.faq {
   width: 70%;
   margin-top: 8rem;
   padding-top: 5rem;
-  min-width: 30rem;
+  min-width: 25rem;
   max-width: 60rem;
   height: 80%;
   min-height: 50rem;
