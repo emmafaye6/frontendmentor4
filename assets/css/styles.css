@@ -49,8 +49,9 @@ section.faq {
   padding-top: 5rem;
   min-width: 25rem;
   max-width: 60rem;
-  height: 80%;
-  min-height: 50rem;
+  height: auto;
+  min-height: 60rem;
+  max-height: 80rem;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 }
 
@@ -107,7 +108,7 @@ section.container {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
   line-height: 1rem;
-  margin-top: -1rem;
+  margin-top: 0rem;
 }
 
 ul.faqlist {
