@@ -6,7 +6,7 @@ html {
   --font-size-heading: 3.5rem;
   --font-size-summary-description: 1.2rem;
   --font-size-summary-detail: 1.2rem;
-  --font-size-desktop: 0.8rem;
+  --font-size-desktop: 0.9rem;
   --line-height-summary-detail: 1.8rem;
 
   /* TEXT */
@@ -165,14 +165,15 @@ li.faqitem:hover .itemsummary {
 @media screen and (min-width: 1110px) {
   body {
     font-size: var(--font-size-desktop);
+    overflow-inline: hidden;
   }
 
   section.faq {
     background: white;
     grid: 1fr / 38.8rem 1fr;
     gap: 8.7rem;
-    max-width: 92rem;
-    min-height: 50.9rem;
+    max-width: 62rem;
+    min-height: 35rem;
   }
 
   .mainimgcontainer {
@@ -206,6 +207,7 @@ li.faqitem:hover .itemsummary {
 
   .itemsummary {
     padding-right: 1.5rem;
+    width: 20rem;
     font-size: var(--font-size-desktop);
   }
 
@@ -216,7 +218,7 @@ li.faqitem:hover .itemsummary {
 
   .faqheader {
     margin-left: -12rem;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     padding-bottom: 0;
   }
 
