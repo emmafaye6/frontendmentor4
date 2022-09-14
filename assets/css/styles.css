@@ -171,9 +171,9 @@ li.faqitem:hover .itemsummary {
   section.faq {
     background: white;
     grid: 1fr / 38.8rem 1fr;
-    gap: 8.7rem;
+    gap: 7rem;
     max-width: 62rem;
-    min-height: 35rem;
+    min-height: 30rem;
   }
 
   .mainimgcontainer {
@@ -201,7 +201,7 @@ li.faqitem:hover .itemsummary {
 
   section.container {
     width: 100%;
-    padding: 3rem 6rem 5rem 0;
+    padding: 3rem 6rem 0rem 0;
     align-items: flex-start;
   }
 
