@@ -166,31 +166,38 @@ li.faqitem:hover .itemsummary {
 @media screen and (min-width: 1110px) {
   body {
     font-size: var(--font-size-desktop);
-    overflow-inline: hidden;
+    overflow: hidden;
   }
 
   section.faq {
     background: white;
     grid: 1fr / 38.8rem 1fr;
-    gap: 7rem;
-    max-width: 62rem;
-    min-height: 30rem;
+    width: 52rem;
+    min-height: 28rem;
+    padding-bottom: 0;
+    margin-top: 3rem;
+  }
+
+  li.faqitem {
+    width: 20rem;
   }
 
   .mainimgcontainer {
     position: relative;
     overflow: hidden;
-    margin-top: -5rem;
+    margin-top: -10rem;
+    margin-left: -7rem;
   }
 
   picture.illustrationwoman img {
-    width: 30.2rem;
+    width: 20.5rem;
     transform: translate(-8.5rem, 0);
   }
 
   picture.shadowillustration img {
+    margin-left: -2rem;
     position: absolute;
-    width: 30.2rem;
+    width: 20.5rem;
     top: 55%;
     transform: translate(-78%, -52%);
   }
@@ -198,27 +205,30 @@ li.faqitem:hover .itemsummary {
   .boxillustration {
     display: block;
     transform: translate(-19rem, 0rem);
+    margin-left: -2rem;
   }
 
   section.container {
+    margin-top: -1rem;
+    margin-left: -12rem;
     width: 100%;
-    padding: 3rem 6rem 0rem 0;
-    align-items: flex-start;
   }
 
   .itemsummary {
     padding-right: 1.5rem;
     width: 20rem;
     font-size: var(--font-size-desktop);
+    line-height: 0;
   }
 
   .itemdetail {
+    width: 20rem;
     font-size: var(--font-size-desktop);
-    line-height: 1.5rem;
+    line-height: 1.1rem;
   }
 
   .faqheader {
-    margin-left: -12rem;
+    margin-left: -15rem;
     padding-top: 2rem;
     padding-bottom: 0;
   }
@@ -227,7 +237,58 @@ li.faqitem:hover .itemsummary {
     margin-top: -3rem;
     margin-left: -15rem;
   }
+
+  .attribution {
+    padding-top: 2rem;
+    margin-top: -5rem;
+  }
 }
+
+/*MEDIA QUERY EXTRA SMALL*/
+
+@media screen and (max-width: 440px) {
+  body {
+    padding: 0 1rem;
+    margin: -1rem;
+  }
+
+  section.faq {
+    width: 80vw;
+    min-width: 7rem;
+    padding: 0;
+  }
+
+  .faqheader {
+    padding: 0;
+  }
+
+  .itemsummary {
+    width: 11rem;
+  }
+
+  .itemdetail {
+    width: 11rem;
+  }
+
+  li.faqitem {
+    width: 10rem;
+  }
+  picture.illustrationwoman img {
+    width: 20rem;
+    height: auto;
+    transform: translate(0, -10.8rem);
+    position: relative;
+    z-index: var(--z-index-secondary);
+    margin-top: 3rem;
+  }
+
+  picture.shadowillustration img {
+    width: 20rem;
+    transform: translate(0, -3.7rem);
+    z-index: var(--z-index-lowest);
+  }
+}
+
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
